@@ -7,12 +7,53 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/textView"
+        android:layout_width="265dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="140dp"
+        android:text="@string/enterYear"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/yearEditText"
+        android:layout_width="266dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Year"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="184dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="44dp"
+        android:onClick="onSubmit"
+        android:text="SUBMIT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yearEditText" />
+
+    <TextView
+        android:id="@+id/ageTextView"
+        android:layout_width="176dp"
+        android:layout_height="63dp"
+        android:text="@string/age"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.258" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
